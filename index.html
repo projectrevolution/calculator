@@ -1,26 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="result1">
+          <h2>
+            calc <span class="theme">THEME</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </h2>
+        </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+        <div class="result">
+          <input type="number" class="resultInput" dir="rtl" />
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <div class="keys">
+          <div class="container-item-1">
+            <input type="button" class="button" value="7" />
+          </div>
 
+          <div class="container-item-2">
+            <input type="button" class="button" value="8" />
+          </div>
 
-  
+          <div class="container-item-3">
+            <input type="button" class="button" value="9" />
+          </div>
+
+          <div>
+            <input type="button" class="button delete" value="DEL" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="4" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="5" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="6" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="+" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="1" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="2" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="3" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="-" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="." />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="0" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="/" />
+          </div>
+
+          <div>
+            <input type="button" class="button" value="X" />
+          </div>
+
+          <div>
+            <input type="reset" class="reset" value="RESET" />
+          </div>
+
+          <div>
+            <input type="button" class="equals" value="=" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
