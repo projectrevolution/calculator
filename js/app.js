@@ -16,12 +16,10 @@ let arr = [];
 buttonValue.forEach((element) => {
   element.addEventListener("click", (e) => {
     let buttonText = e.target.innerHTML;
-
     let firstValue =  result.value += buttonText;
   
 
     if (buttonText === '+' || buttonText === '=') {
-      console.log('plus clicked');
       plusValue = true;
     }
     else {
@@ -39,15 +37,15 @@ function addValues(arr) {
   let reduceNums = arr.reduce((pre, curr) => {
     return pre + curr;
   });
-  console.log("the nums summed are ", reduceNums);
-  console.log(result);
 
-  result.value = reduceNums;
+  console.log('reduced nums ', reduceNums);
+  
+  document.getElementById("inputId").value = reduceNums.toString();
 }
 
 function getResults() {
   if (plusValue == true) {
-    console.log(addValues(arr));
+    addValues(arr);
   } 
  
   // else if (minusValue == true) {
