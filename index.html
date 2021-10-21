@@ -21,81 +21,81 @@
           </h2>
         </div>
 
-        <div class="result" dir="rtl">
-          <input type="number" id="inputId" class="resultInput inputTag"/>
+        <div class="result">
+          <input type="text" id="inputId" class="resultInput" value="0"/>
         </div>
 
         <div class="keys">
           <div class="container-item">
-            <button type="button" class="button1 buttons" >7</button>
+            <button type="button" class="button1 buttons" value="7">7</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons">8</button>
+            <button type="button" class="button1 buttons" value="8">8</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num9">9</button>
+            <button type="button" class="button1 buttons" value="9">9</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 delete">DEL</button>
+            <button type="button" class="button1 delete" onclick="resetInput()">DEL</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num4">4</button>
+            <button type="button" class="button1 buttons" value="4">4</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num5">5</button>
+            <button type="button" class="button1 buttons" value="5">5</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num6">6</button>
+            <button type="button" class="button1 buttons" value="6">6</button>
+          </div>
+
+          <div class="container-item" >
+            <button type="button" dir="rtl" class="button1 buttons" value="+">+</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 plus">+</button>
+            <button type="button" class="button1 buttons" value="1">1</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num1">1</button>
+            <button type="button" class="button1 buttons" value="2">2</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num2">2</button>
+            <button type="button" class="button1 buttons" value="3">3</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons num3">3</button>
+            <button type="button" class="button1 buttons" value="-">-</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 minus" >-</button>
+            <button type="button" class="button1 buttons" value=".">.</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 dot">.</button>
+            <button type="button" class="button1 buttons" value="0">0</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 buttons zero">0</button>
+            <button type="button" class="button1 buttons" value="/">/</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 divide">/</button>
+            <button type="button" class="button1 buttons" value="*">X</button>
           </div>
 
           <div class="container-item">
-            <button type="button" class="button1 multiply">X</button>
+            <button type="reset" class="reset" onclick="resetInput()">RESET</button>
           </div>
 
           <div class="container-item">
-            <button type="reset" class="reset" onclick="resetArr()" >RESET</button>
-          </div>
-
-          <div class="container-item">
-            <button type="submit" class="equals" onclick="getResults()">=</button>
+            <button type="submit" class="equals" value="=" onclick="getResults()">=</button>
           </div>
         </div>
       </div>
