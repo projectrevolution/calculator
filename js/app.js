@@ -10,9 +10,7 @@ buttonValue.forEach((element) => {
 });
 
 function getResults() {
-  console.log("the first value passed into the function is ", firstValue);
 
-  console.log("the eval function is ", eval(firstValue));
   displayScreen.value = eval(firstValue);
 }
 
